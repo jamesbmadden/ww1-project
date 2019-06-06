@@ -1,5 +1,7 @@
 import './timeline.js';
 
+window.theme = 2;
+
 window.colours = [
   {
     "background": "#222",
@@ -18,5 +20,5 @@ window.colours = [
   }
 ];
 
-document.body.style.background = colours[2].background;
-document.body.style.color = colours[2].text;
+document.body.style.background = colours[theme].background;
+document.body.style.color = colours[theme].text;
