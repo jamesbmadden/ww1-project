@@ -10,17 +10,13 @@ export default class Timeline extends LitElement {
   static get styles () {
     return css`
       .timeline-container {
-        position: relative;
+        position: absolute;
         height: 100%;
         width: 100%;
-        overflow-x: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .timeline-inner {
         max-width: 720px;
-        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     `;
   }
@@ -28,9 +24,7 @@ export default class Timeline extends LitElement {
   render () {
     return html`
       <div class="timeline-container">
-        <div class="timeline-inner">
-          <p>Coming Soon</p>
-        </div>
+        <p>Coming Soon</p>
       </div>
     `;
   }
