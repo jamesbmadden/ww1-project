@@ -3,9 +3,9 @@ import { LitElement, html, customElement, property, css } from 'https://unpkg.co
 @customElement('ww-timeline')
 export default class Timeline extends LitElement {
 
-  @property({type: Date}) start;
-  @property({type: Date}) end;
-  @property({type: Array}) items;
+  @property({type: Date}) start = new Date(1900, 0, 0);
+  @property({type: Date}) end = new Date(2000, 0, 0);
+  @property({type: Array}) items = [];
 
   static get styles () {
     return css`
@@ -24,19 +24,14 @@ export default class Timeline extends LitElement {
   render () {
     return html`
       <div class="timeline-container">
-        <p>Coming Soon</p>
+        <div class="timeline-events">
+          ${this.items.map(item => html`
+            <div class="timeline-event">
+              <p>${item.title}</p>
+            </div>
+          `)}
+        </div>
       </div>
-    `;
-  }
-
-}
-
-@customElement('ww-timeline-item')
-export class TimelineItem extends LitElement {
-
-  render () {
-    return html`
-    
     `;
   }
 
