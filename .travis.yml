@@ -8,6 +8,9 @@ deploy:
 before_install:
   - npm i -g npm
 install:
-  - npm install
+  - npm ci
+cache:
+  directories:
+  - "$HOME/.npm"
 script:
   - npm run travis
