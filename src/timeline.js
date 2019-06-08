@@ -24,7 +24,11 @@ export default class Timeline extends LitElement {
       .timeline-event {
         position: absolute;
         display: inline;
-        transform: translate(-50%);
+        transform: translate(-50%, 2rem);
+        white-space: nowrap;
+      }
+      .timeline-event:nth-child(2n) {
+        transform: translate(-50%, -3rem);
       }
       .timeline {
         width: 100%;
