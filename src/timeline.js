@@ -31,7 +31,7 @@ export default class Timeline extends LitElement {
         transform: translate(-50%, -3rem);
       }
       .timeline {
-        width: 100%;
+        width: 720px;
         height: 1rem;
         background: #b71c1c;
       }
