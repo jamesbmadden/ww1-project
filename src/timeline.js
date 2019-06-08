@@ -36,6 +36,13 @@ export default class Timeline extends LitElement {
       }
       .timeline-event::after {
         content: "";
+        position: absolute;
+        display: inline-block;
+        height: 3.5rem;
+        width: 1rem;
+        top: -4rem;
+        background: #b71c1c;
+        left: calc(50% - 0.5rem);
       }
       .timeline-event:nth-child(2n) {
         transform: translate(-50%, -4.5rem);
