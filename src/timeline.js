@@ -47,6 +47,10 @@ export default class Timeline extends LitElement {
       .timeline-event:nth-child(2n) {
         transform: translate(-50%, -4.5rem);
       }
+      .timeline-event:nth-child(2n)::after {
+        top: auto;
+        bottom: -4rem;
+      }
       .timeline {
         width: 720px;
         height: 1rem;
