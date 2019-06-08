@@ -18,18 +18,36 @@ export default class Timeline extends LitElement {
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      .timeline-event {
+        position: absolute;
+        display: inline;
+        transform: translate(-50%);
+      }
+      .timeline {
+        width: 100%;
+        height: 1rem;
+        background: #b71c1c;
+      }
     `;
   }
 
   render () {
+    let startInt = this.start.getTime();
+    let endInt = this.end.getTime();
+    let length = endInt - startInt;
     return html`
       <div class="timeline-container">
         <div class="timeline-events">
-          ${this.items.map(item => html`
-            <div class="timeline-event">
-              <p>${item.title}</p>
+          ${this.items.map(item => {
+            console.log(item);
+            let percentage = (item.date.getTime() - startInt) / length;
+            console.log(percentage);
+            return html`
+            <div class="timeline-event" style="left: ${720 * percentage}px">
+              <span>${item.title}</span>
             </div>
-          `)}
+          `})}
+          <div class="timeline"></div>
         </div>
       </div>
     `;
