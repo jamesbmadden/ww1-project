@@ -33,8 +33,12 @@ document.body.style.color = colours[theme].text;
 const timeline = document.querySelector('ww-timeline');
 
 timeline.start = new Date(2004, 0, 19);
-timeline.end = new Date();
+timeline.end = new Date(2019, 0, 19);
 timeline.items = [
+  {
+    date: new Date(2004, 0, 19),
+    title: 'Birth'
+  },
   {
     date: new Date(2005, 0, 19),
     title: 'First Birthday'
