@@ -31,7 +31,6 @@ export default class Timeline extends LitElement {
         white-space: nowrap;
         top: 4rem;
         cursor: pointer;
-        box-shadow: 0px 3px 6px rgba(127, 127, 127, 0.5);
       }
       .timeline-event p {
         margin: -0.5rem;
@@ -41,6 +40,7 @@ export default class Timeline extends LitElement {
         border-radius: 1rem;
         z-index: 1;
         text-align: center;
+        box-shadow: 0px 3px 6px rgba(127, 127, 127, 0.5);
       }
       .date {
         font-size: 0.75rem;
