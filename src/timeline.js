@@ -21,11 +21,15 @@ export default class Timeline extends LitElement {
         flex-direction: column;
         justify-content: center;
       }
+      .timeline-events {
+        position: relative;
+      }
       .timeline-event {
         position: absolute;
         display: inline;
-        transform: translate(-50%, 4rem);
+        transform: translate(-50%);
         white-space: nowrap;
+        top: 4rem;
       }
       .timeline-event span {
         padding: 1rem;
@@ -45,7 +49,9 @@ export default class Timeline extends LitElement {
         left: calc(50% - 0.5rem);
       }
       .timeline-event:nth-child(2n) {
-        transform: translate(-50%, -4.5rem);
+        transform: translate(-50%);
+        top: auto;
+        bottom: 4rem;
       }
       .timeline-event:nth-child(2n)::after {
         top: auto;
