@@ -30,6 +30,7 @@ export default class Timeline extends LitElement {
         transform: translate(-50%);
         white-space: nowrap;
         top: 4rem;
+        cursor: pointer;
       }
       .timeline-event p {
         margin: -0.5rem;
