@@ -52,6 +52,10 @@ timeline.items = [
     title: 'Eighth Birthday'
   },
   {
+    date: new Date(2015, 8, 12),
+    title: 'idk'
+  },
+  {
     date: new Date(2019, 0, 19),
     title: 'Fifteenth Birthday'
   }
