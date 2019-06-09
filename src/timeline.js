@@ -38,6 +38,10 @@ export default class Timeline extends LitElement {
         color: #222;
         border-radius: 1rem;
         z-index: 1;
+        text-align: center;
+      }
+      .date {
+        font-size: 0.75rem;
       }
       .timeline-event::after {
         content: "";
@@ -80,7 +84,7 @@ export default class Timeline extends LitElement {
             return html`
             <div class="timeline-event" style="left: ${720 * percentage}px">
               <p>${item.title}<br>
-                <i>Date Unknown</i>
+                <i class="date">Date Unknown</i>
               </p>
             </div>
           `})}
