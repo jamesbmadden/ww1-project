@@ -31,6 +31,7 @@ export default class Timeline extends LitElement {
         white-space: nowrap;
         top: 4rem;
         cursor: pointer;
+        box-shadow: 0px 3px 6px rgba(127, 127, 127, 0.5);
       }
       .timeline-event p {
         margin: -0.5rem;
@@ -53,6 +54,7 @@ export default class Timeline extends LitElement {
         top: -4rem;
         background: white;
         left: calc(50% - 0.5rem);
+        z-index: -1;
       }
       .timeline-event:nth-child(2n) {
         transform: translate(-50%);
