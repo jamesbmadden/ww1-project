@@ -4,7 +4,7 @@ import './timeline.js';
   Create colour scheme. window.colours and window.theme can be referenced anywhere for the selected colour pallete. This is for easy
   editing and comparing.
 */
-window.theme = 2;
+window.theme = 0;
 
 window.colours = [
   {

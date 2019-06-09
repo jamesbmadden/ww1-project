@@ -29,8 +29,8 @@ export default class Timeline extends LitElement {
       }
       .timeline-event span {
         padding: 1rem;
-        background: #b71c1c;
-        color: white;
+        background: white; /* #b71c1c */
+        color: #222;
         border-radius: 1rem;
         z-index: 1;
       }
@@ -41,7 +41,7 @@ export default class Timeline extends LitElement {
         height: 3.5rem;
         width: 1rem;
         top: -4rem;
-        background: #b71c1c;
+        background: white;
         left: calc(50% - 0.5rem);
       }
       .timeline-event:nth-child(2n) {
@@ -54,7 +54,7 @@ export default class Timeline extends LitElement {
       .timeline {
         width: 720px;
         height: 1rem;
-        background: #b71c1c;
+        background: white;
       }
     `;
   }
