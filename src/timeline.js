@@ -84,7 +84,7 @@ export default class Timeline extends LitElement {
             return html`
             <div class="timeline-event" style="left: ${720 * percentage}px">
               <p>${item.title}<br>
-                <i class="date">Date Unknown</i>
+                <i class="date">${item.date.getUTCFullYear()}/${item.date.getUTCMonth()+1}/${item.date.getUTCDate()}</i>
               </p>
             </div>
           `})}
