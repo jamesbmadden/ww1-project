@@ -31,7 +31,8 @@ export default class Timeline extends LitElement {
         white-space: nowrap;
         top: 4rem;
       }
-      .timeline-event span {
+      .timeline-event p {
+        margin: -0.5rem;
         padding: 1rem;
         background: white; /* #b71c1c */
         color: #222;
@@ -78,7 +79,9 @@ export default class Timeline extends LitElement {
             console.log(percentage);
             return html`
             <div class="timeline-event" style="left: ${720 * percentage}px">
-              <span>${item.title}</span>
+              <p>${item.title}<br>
+                <i>Date Unknown</i>
+              </p>
             </div>
           `})}
           <div class="timeline"></div>
