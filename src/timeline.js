@@ -75,6 +75,11 @@ export default class Timeline extends LitElement {
         height: 1rem;
         background: white;
       }
+      @media (max-width: 720px) {
+        .timeline-container {
+          margin: 0 8rem;
+        }
+      }
     `;
   }
 
