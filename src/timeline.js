@@ -79,9 +79,7 @@ export default class Timeline extends LitElement {
       <div class="timeline-container">
         <div class="timeline-events">
           ${this.items.map(item => {
-            console.log(item);
             let percentage = (item.date.getTime() - startInt) / length;
-            console.log(percentage);
             return html`
             <div class="timeline-event" style="left: ${720 * percentage}px">
               <p>${item.title}<br>
