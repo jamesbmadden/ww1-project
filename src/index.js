@@ -37,22 +37,27 @@ timeline.end = new Date(2019, 0, 19);
 timeline.items = [
   {
     date: new Date(2004, 0, 19),
-    title: 'Birth'
+    title: 'Birth',
+    image: './img/tobermory.jpg'
   },
   {
     date: new Date(2005, 0, 19),
-    title: 'First Birthday'
+    title: 'First Birthday',
+    image: './img/Duart.jpg'
   },
   {
     date: new Date(2007, 0, 19),
-    title: 'Third Birthday'
+    title: 'Third Birthday',
+    image: './img/Paris.jpg'
   },
   {
     date: new Date(2012, 0, 19),
-    title: 'Eighth Birthday'
+    title: 'Eighth Birthday',
+    image: './img/galapagos.jpg'
   },
   {
     date: new Date(2019, 0, 19),
-    title: 'Fifteenth Birthday'
+    title: 'Fifteenth Birthday',
+    image: './img/tobermory.jpg'
   }
 ];

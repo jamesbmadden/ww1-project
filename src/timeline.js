@@ -75,6 +75,11 @@ export default class Timeline extends LitElement {
         height: 1rem;
         background: white;
       }
+      img {
+        position: relative;
+        display: block;
+        width: 180px;
+      }
       @media (max-width: 720px) {
         .timeline-container {
           margin: 0 8rem;
@@ -94,7 +99,9 @@ export default class Timeline extends LitElement {
             let percentage = (item.date.getTime() - startInt) / length;
             return html`
             <div class="timeline-event" style="left: ${720 * percentage}px">
-              <p>${item.title}<br>
+              <p>
+                <img src="${item.image}" width="180" /><br>
+                ${item.title}<br>
                 <i class="date">${item.date.getUTCFullYear()}/${item.date.getUTCMonth()+1}/${item.date.getUTCDate()}</i>
               </p>
             </div>
