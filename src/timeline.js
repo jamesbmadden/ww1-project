@@ -79,6 +79,7 @@ export default class Timeline extends LitElement {
         position: relative;
         display: block;
         width: 180px;
+        border-radius: 1rem;
       }
       @media (max-width: 2048px) {
         .timeline-container {
