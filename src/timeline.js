@@ -13,7 +13,7 @@ export default class Timeline extends LitElement {
         position: absolute;
         height: 100%;
         width: 100%;
-        max-width: 720px;
+        max-width: 2048px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -71,7 +71,7 @@ export default class Timeline extends LitElement {
         bottom: -4rem;
       }
       .timeline {
-        width: 720px;
+        width: 2048px;
         height: 1rem;
         background: white;
       }
@@ -80,7 +80,7 @@ export default class Timeline extends LitElement {
         display: block;
         width: 180px;
       }
-      @media (max-width: 720px) {
+      @media (max-width: 2048px) {
         .timeline-container {
           margin: 0 8rem;
         }
@@ -98,7 +98,7 @@ export default class Timeline extends LitElement {
           ${this.items.map(item => {
             let percentage = (item.date.getTime() - startInt) / length;
             return html`
-            <div class="timeline-event" style="left: ${720 * percentage}px">
+            <div class="timeline-event" style="left: ${2048 * percentage}px">
               <p>
                 <img src="${item.image}" width="180" /><br>
                 ${item.title}<br>
