@@ -28,7 +28,6 @@ export default class Timeline extends LitElement {
         position: absolute;
         display: inline;
         transform: translate(-50%);
-        white-space: nowrap;
         top: 4rem;
       }
       .timeline-event p {
@@ -41,6 +40,7 @@ export default class Timeline extends LitElement {
         text-align: center;
         box-shadow: 0px 3px 6px rgba(127, 127, 127, 0.5);
         transition: transform 0.2s, box-shadow 0.2s;
+        max-width: 180px;
         cursor: pointer;
       }
       .timeline-event p:hover {
