@@ -32,32 +32,16 @@ document.body.style.color = colours[theme].text;
 */
 const timeline = document.querySelector('ww-timeline');
 
-timeline.start = new Date(2004, 0, 19);
-timeline.end = new Date(2019, 0, 19);
+// July 28, 1914 – November 11, 1918
+timeline.start = new Date(1914, 6, 28);
+timeline.end = new Date(1918, 10, 11);
 timeline.items = [
   {
-    date: new Date(2004, 0, 19),
-    title: 'Birth',
-    image: './img/tobermory.jpg'
-  },
-  {
-    date: new Date(2005, 0, 19),
-    title: 'First Birthday',
-    image: './img/Duart.jpg'
-  },
-  {
-    date: new Date(2007, 0, 19),
-    title: 'Third Birthday',
-    image: './img/Paris.jpg'
-  },
-  {
-    date: new Date(2012, 0, 19),
-    title: 'Eighth Birthday',
+    title: 'Canada\'s Entry',
+    date: new Date(1914, 6, 28),
     image: './img/galapagos.jpg'
-  },
-  {
-    date: new Date(2019, 0, 19),
-    title: 'Fifteenth Birthday',
-    image: './img/tobermory.jpg'
   }
 ];
+/*
+
+*/
