@@ -65,6 +65,7 @@ export default class Timeline extends LitElement {
         transform: translate(-50%);
         top: auto;
         bottom: 4rem;
+        z-index: 1; /* Render shadow after pseudo child of elements below on timeline */
       }
       .timeline-event:nth-child(2n)::after {
         top: auto;
