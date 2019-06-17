@@ -25,7 +25,7 @@ export default class Dialogue extends LitElement {
         top: -1rem;
         left: -1rem;
         width: calc(100% + 2rem);
-        max-height: 80%;
+        max-height: 66%;
         object-fit: cover;
       }
     `;
