@@ -8,6 +8,7 @@ export default class Dialogue extends LitElement {
   static get styles () {
     return css`
       .dialogue-box {
+        box-sizing: border-box;
         background-color: #333;
         position: fixed;
         top: 0;
@@ -15,9 +16,15 @@ export default class Dialogue extends LitElement {
         width: 100%;
         height: 100%;
         z-index: 3;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 1rem;
       }
       .header-img {
-        width: 100%;
+        position: relative;
+        top: -1rem;
+        left: -1rem;
+        width: calc(100% + 2rem);
         max-height: 80%;
         object-fit: cover;
       }
