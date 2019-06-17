@@ -13,7 +13,8 @@ timeline.items = [
   {
     title: 'Canada\'s Entry',
     date: new Date(1914, 6, 28),
-    image: './img/war.jpg'
+    image: './img/war.jpg',
+    body: 'At the time, Canada’s foreign affairs was handled by the british government, and so when the UK went to war, so did the rest of the British Empire, including Canada. At first, WW1 united Anglophone and Francophone Canadians, but that changed with conscription in 1917. Anglophone Canadians were generally on board with the idea, and supported fighting for the crown, but Francophones were not so happy about it. By the time conscription actually started in 1918, though, the war was almost over and only a very small number of conscripts ever made it to France. The lasting impact of conscription, however, was another divide between Anglophone and Francophone Canadians, and a feeling of betrayal in Francophone Canadians.'
   },
   {
     title: 'The Second Battle of Ypres',
