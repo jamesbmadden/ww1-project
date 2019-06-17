@@ -19,6 +19,7 @@ export default class Dialogue extends LitElement {
       .header-img {
         width: 100%;
         max-height: 80%;
+        object-fit: cover;
       }
     `;
   }
