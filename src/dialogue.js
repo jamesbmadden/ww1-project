@@ -20,7 +20,7 @@ export default class Dialogue extends LitElement {
         overflow-x: hidden;
       }
       .header-img {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 66%;
         background-position: center;
@@ -32,6 +32,8 @@ export default class Dialogue extends LitElement {
         width: calc(100% - 2rem);
         margin: auto;
         max-width: 720px;
+        position: relative;
+        top: 66%;
       }
       .body {
         text-align: justify;
