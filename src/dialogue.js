@@ -27,6 +27,7 @@ export default class Dialogue extends LitElement {
       .content {
         width: calc(100% - 2rem);
         margin: auto;
+        max-width: 720px;
       }
     `;
   }
