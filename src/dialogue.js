@@ -18,15 +18,15 @@ export default class Dialogue extends LitElement {
         z-index: 3;
         overflow-y: auto;
         overflow-x: hidden;
-        padding: 1rem;
       }
       .header-img {
-        position: relative;
-        top: -1rem;
-        left: -1rem;
-        width: calc(100% + 2rem);
+        width: 100%;
         max-height: 66%;
         object-fit: cover;
+      }
+      .content {
+        width: calc(100% - 2rem);
+        margin: auto;
       }
     `;
   }
@@ -46,9 +46,11 @@ export default class Dialogue extends LitElement {
     return html`
       <div class="dialogue-box">
         <img class="header-img" src="${this.event.image}" />
-        <h1>${this.event.title}</h1>
-        <h3><i class="date">${this.event.date.getUTCFullYear()}/${this.event.date.getUTCMonth()+1}/${this.event.date.getUTCDate()}</i></h3>
-        <p>${this.event.body}</p>
+        <article class="content">
+          <h1>${this.event.title}</h1>
+          <h3><i class="date">${this.event.date.getUTCFullYear()}/${this.event.date.getUTCMonth()+1}/${this.event.date.getUTCDate()}</i></h3>
+          <p>${this.event.body}</p>
+        </article>
       </div>
     `;
   }
