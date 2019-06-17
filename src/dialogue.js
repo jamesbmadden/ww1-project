@@ -42,6 +42,7 @@ export default class Dialogue extends LitElement {
   }
 
   render () {
+    console.log(this.event);
     return html`
       <div class="dialogue-box">
         <img class="header-img" src="${this.event.image}" />
