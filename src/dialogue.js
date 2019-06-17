@@ -40,6 +40,7 @@ export default class Dialogue extends LitElement {
         <img class="header-img" src="${this.event.image}" />
         <h1>${this.event.title}</h1>
         <h3><i class="date">${this.event.date.getUTCFullYear()}/${this.event.date.getUTCMonth()+1}/${this.event.date.getUTCDate()}</i></h3>
+        <p>${this.event.description}</p>
       </div>
     `;
   }
