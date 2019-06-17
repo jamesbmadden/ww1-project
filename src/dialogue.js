@@ -20,8 +20,9 @@ export default class Dialogue extends LitElement {
         overflow-x: hidden;
       }
       .header-img {
+        position: relative;
         width: 100%;
-        max-height: 66%;
+        height: 66%;
         object-fit: cover;
       }
       .content {
@@ -48,8 +49,13 @@ export default class Dialogue extends LitElement {
   render () {
     console.log(this.event);
     return html`
+      <style>
+        .header-img {
+          background: url(${this.event.image});
+        }
+      </style>
       <div class="dialogue-box">
-        <img class="header-img" src="${this.event.image}" />
+        <div class="header-img"></div>
         <article class="content">
           <h1>${this.event.title}</h1>
           <h3><i class="date">${this.event.date.getUTCFullYear()}/${this.event.date.getUTCMonth()+1}/${this.event.date.getUTCDate()}</i></h3>
