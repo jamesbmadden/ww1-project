@@ -3,19 +3,36 @@ import { LitElement, html, customElement, property, css } from 'https://unpkg.co
 @customElement('ww-dialogue')
 export default class Dialogue extends LitElement {
 
-  @property({type: String}) event;
+  @property({type: Object}) event;
 
   static get styles () {
     return css`
-      
+      .dialogue-box {
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+      }
     `;
+  }
+
+  connectedCallback () {
+    super.connectedCallback();
+    document.body.style.overflowX = 'hidden';
+  }
+
+  disconnectedCallback () {
+    super.disconnectedCallback();
+    document.body.style.overflowX = 'initial';
   }
 
   render () {
     return html`
       <div class="dialogue-box">
-        <h1>${this.event}</h1>
-        <slot></slot>
+        <h1>${this.event.title}</h1>
       </div>
     `;
   }
