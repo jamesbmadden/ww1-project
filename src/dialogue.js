@@ -23,7 +23,10 @@ export default class Dialogue extends LitElement {
         position: relative;
         width: 100%;
         height: 66%;
-        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
       .content {
         width: calc(100% - 2rem);
