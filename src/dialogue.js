@@ -16,6 +16,10 @@ export default class Dialogue extends LitElement {
         height: 100%;
         z-index: 3;
       }
+      .header-img {
+        width: 100%;
+        max-height: 80%;
+      }
     `;
   }
 
@@ -32,6 +36,7 @@ export default class Dialogue extends LitElement {
   render () {
     return html`
       <div class="dialogue-box">
+        <img class="header-img" src="${this.event.image}" />
         <h1>${this.event.title}</h1>
       </div>
     `;
