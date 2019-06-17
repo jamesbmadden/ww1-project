@@ -101,7 +101,11 @@ export default class Timeline extends LitElement {
             let percentage = (item.date.getTime() - startInt) / length;
             return html`
             <div class="timeline-event" style="left: ${2048 * percentage}px">
-              <p>
+              <p @click=${() => {
+                let dialogue = document.createElement('ww-dialogue');
+                dialogue.event = item;
+                document.body.appendChild(dialogue);
+              }}>
                 <img src="${item.image}" width="180" /><br>
                 ${item.title}<br>
                 <i class="date">${item.date.getUTCFullYear()}/${item.date.getUTCMonth()+1}/${item.date.getUTCDate()}</i>
