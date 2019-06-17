@@ -21,12 +21,12 @@ export default class Dialogue extends LitElement {
 
   connectedCallback () {
     super.connectedCallback();
-    document.body.style.overflowX = 'hidden';
+    document.body.style.overflow = 'hidden';
   }
 
   disconnectedCallback () {
     super.disconnectedCallback();
-    document.body.style.overflowX = 'initial';
+    document.body.style.overflow = 'initial';
   }
 
   render () {
