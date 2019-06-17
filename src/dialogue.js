@@ -1,4 +1,4 @@
-import { LitElement, html, customElement, property, css } from 'https://unpkg.com/lit-element@2.1.0/lit-element.js?module';
+import { LitElement, html, customElement, property, css } from 'lit-element';
 
 @customElement('ww-dialogue')
 export default class Dialogue extends LitElement {
