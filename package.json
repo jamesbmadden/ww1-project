@@ -6,6 +6,7 @@
   "scripts": {
     "test": "console.log('no tests enabled')",
     "build": "webpack",
+    "start": "webpack-dev-server",
     "travis": "npm run build && rm .gitignore"
   },
   "repository": {
