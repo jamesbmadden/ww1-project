@@ -55,6 +55,25 @@ export default class Dialogue extends LitElement {
         bottom: 1rem;
         z-index: 2;
       }
+      .close-button {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        box-sizing: border-box;
+        height: 4rem;
+        width: 4rem;
+        padding: 0.5rem;
+        background: #333;
+        border-radius: 2rem;
+        z-index: 4;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .close-button img {
+        height: 100%;
+      }
     `;
   }
 
@@ -68,8 +87,14 @@ export default class Dialogue extends LitElement {
     document.body.style.overflow = 'initial';
   }
 
+  closeDialogue () {
+    console.log(this.parentElement, this);
+    setTimeout(() => {
+      this.parentElement.removeChild(this);
+    }, 0);
+  }
+
   render () {
-    console.log(this.event);
     return html`
       <style>
         .header-img {
@@ -77,6 +102,9 @@ export default class Dialogue extends LitElement {
         }
       </style>
       <div class="dialogue-box">
+        <a class="close-button" @click=${() => this.closeDialogue}>
+          <img src="./img/close.svg" width="32" />
+        </a>
         <header class="header-img">
           <h1 class="title">${this.event.title}</h1>
         </header>
