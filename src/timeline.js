@@ -9,6 +9,14 @@ export default class Timeline extends LitElement {
 
   static get styles () {
     return css`
+      :host {
+        transition: opacity 0.6s;
+        transition-delay: 0.2s;
+      }
+      :host([fade-out]) {
+        opacity: 0;
+        transition-delay: 0s;
+      }
       .timeline-container {
         position: absolute;
         height: 100%;
