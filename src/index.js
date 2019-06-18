@@ -52,9 +52,6 @@ timeline.items = [
     body: 'The Battle of Vimy Ridge took place in the Nord-Pas-de-Calais region of France. Four Canadian divisions assaulted the ridge in the early morning of April 9th 1917 which was the first time all four divisions attacked together. Over 15000 Canadian infantry overran the Germans along the front. 3598 Canadians were killed and another 7000 were injured during the attack. Engineers dug tunnels from the rear to the front of the ridge to bring men forward safely for the attack. The infantry was able to keep moving forward under heavy fire and even when officers died due to the bravery of the men and a well strategized plan. The infantry was given specialist roles like machine gunners, rifle men and grenade throwers which helped provide a strong battlefront. The battle lasted three days, many lives were lost, but Canada came out victorious. The capture of Vimy was a great achievement, Canada also fought as a united front for the first time which was a huge step forward. '
   },
   {
-    /**
-     * @todo add image to the side.
-     */
     title: 'Battle of Hill 70',
     date: new Date(1917, 7, 15),
     image: './img/hill70.jpg',
