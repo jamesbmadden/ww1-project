@@ -81,7 +81,6 @@ export default class Dialogue extends LitElement {
           <h1 class="title">${this.event.title}</h1>
         </header>
         <article class="content">
-          <h3><i class="date">${this.event.date.getUTCFullYear()}/${this.event.date.getUTCMonth()+1}/${this.event.date.getUTCDate()}</i></h3>
           <p class="body">${this.event.body}</p>
         </article>
       </div>
