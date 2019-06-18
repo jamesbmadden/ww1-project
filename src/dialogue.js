@@ -10,6 +10,7 @@ export default class Dialogue extends LitElement {
       @keyframes open {
         0% {
           opacity: 0;
+          transform: translateY(100%);
         }
       }
       .dialogue-box {
@@ -23,8 +24,8 @@ export default class Dialogue extends LitElement {
         z-index: 3;
         overflow-y: auto;
         overflow-x: hidden;
-        animation: open 0.4s;
-        transition: opacity 0.4s;
+        animation: open 0.8s;
+        transition: opacity 0.8s, transform 0.8s;
       }
       .header-img {
         position: absolute;
@@ -92,6 +93,7 @@ export default class Dialogue extends LitElement {
   connectedCallback () {
     super.connectedCallback();
     document.body.style.overflow = 'hidden';
+    this.parentElement.querySelector('ww-timeline').setAttribute('fade-out', true);
   }
 
   disconnectedCallback () {
@@ -101,9 +103,11 @@ export default class Dialogue extends LitElement {
 
   closeDialogue () {
     this.shadowRoot.querySelector('.dialogue-box').style.opacity = '0';
+    this.shadowRoot.querySelector('.dialogue-box').style.transform = 'translateY(100%)';
+    this.parentElement.querySelector('ww-timeline').removeAttribute('fade-out');
     setTimeout(() => {
       this.parentElement.removeChild(this);
-    }, 400);
+    }, 800);
   }
 
   render () {
