@@ -56,6 +56,7 @@ export default class Dialogue extends LitElement {
       }
       .body {
         text-align: justify;
+        margin-bottom: 2rem;
       }
       .title {
         font-size: 4rem;
