@@ -58,6 +58,7 @@ timeline.items = [
     title: 'Battle of Hill 70',
     date: new Date(1917, 7, 15),
     image: './img/hill70.jpg',
+    body_image: './img/map.jpg',
     body: 'The Battle of Hill 70 took place from August 15th to the 25th in 1917 near the city of Lens. The battle was an attack on the German-controlled town of Lens by the Britsh and Canadians. The goal of the attack was to eliminate the German stronghold in Lens and to weaken their overall defences. The battle was started when Douglas Haig (a senior Britsh officer), ordered Arthur Currie (young commander of the Canadian Corps) to launch an assault on Lens in France. Currie felt that directly attacking the city would cause many casualties, as the German defences on the  city were quite strong. Currie decided to capture the high ground north of the city as a way to orchestrate surprise attacks and set up Candian defences near the city. On August 21 and 23 the Canadians began to move towards the city, and the Germans launched 21 counter attacks to take back the hill. The battle that took place was brutal, as poison gas was used against the Canadians. 9,200 Canadians were lost in battle, and 25,000 German soldiers were killed. The Canadians did not completely achieve their goal of depleting German power in Lens, but the battle was a crucial point for the Canadian military. The hill the Candians claimed was later named Hill 70, because it rose 70 meters above sea level.'
   },
   {

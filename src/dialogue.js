@@ -88,6 +88,11 @@ export default class Dialogue extends LitElement {
       .close-button img {
         height: 100%;
       }
+      .body-image {
+        float: right;
+        width: 33%;
+        margin: 1rem;
+      }
     `;
   }
 
@@ -126,6 +131,7 @@ export default class Dialogue extends LitElement {
           <h1 class="title">${this.event.title}</h1>
         </header>
         <article class="content">
+          ${this.event.body_image ? html`<img class="body-image" src="${this.event.body_image}" />` : ''}
           <p class="body">${this.event.body}</p>
         </article>
       </div>
