@@ -48,8 +48,12 @@ export default class Dialogue extends LitElement {
       .body {
         text-align: justify;
       }
-      h1 {
+      .title {
         font-size: 2rem;
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+        z-index: 2;
       }
     `;
   }
@@ -73,9 +77,10 @@ export default class Dialogue extends LitElement {
         }
       </style>
       <div class="dialogue-box">
-        <div class="header-img"></div>
+        <div class="header-img">
+          <h1 class="title">${this.event.title}</h1>
+        </div>
         <article class="content">
-          <h1>${this.event.title}</h1>
           <h3><i class="date">${this.event.date.getUTCFullYear()}/${this.event.date.getUTCMonth()+1}/${this.event.date.getUTCDate()}</i></h3>
           <p class="body">${this.event.body}</p>
         </article>
