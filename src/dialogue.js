@@ -28,6 +28,16 @@ export default class Dialogue extends LitElement {
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
+      .header-img::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(transparent, #333);
+      }
       .content {
         width: calc(100% - 2rem);
         margin: auto;
@@ -37,6 +47,9 @@ export default class Dialogue extends LitElement {
       }
       .body {
         text-align: justify;
+      }
+      h1 {
+        font-size: 2rem;
       }
     `;
   }
