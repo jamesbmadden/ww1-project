@@ -7,6 +7,11 @@ export default class Dialogue extends LitElement {
 
   static get styles () {
     return css`
+      @keyframes open {
+        0% {
+          opacity: 0;
+        }
+      }
       .dialogue-box {
         box-sizing: border-box;
         background-color: #333;
@@ -18,6 +23,8 @@ export default class Dialogue extends LitElement {
         z-index: 3;
         overflow-y: auto;
         overflow-x: hidden;
+        animation: open 0.4s;
+        transition: opacity 0.4s;
       }
       .header-img {
         position: absolute;
@@ -44,6 +51,7 @@ export default class Dialogue extends LitElement {
         max-width: 720px;
         position: relative;
         top: 66%;
+        font-size: 1.25rem;
       }
       .body {
         text-align: justify;
@@ -70,6 +78,10 @@ export default class Dialogue extends LitElement {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: background 0.2s;
+      }
+      .close-button:hover {
+        background: #555;
       }
       .close-button img {
         height: 100%;
@@ -88,9 +100,10 @@ export default class Dialogue extends LitElement {
   }
 
   closeDialogue () {
+    this.shadowRoot.querySelector('.dialogue-box').style.opacity = '0';
     setTimeout(() => {
       this.parentElement.removeChild(this);
-    }, 0);
+    }, 400);
   }
 
   render () {
