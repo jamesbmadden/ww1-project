@@ -49,7 +49,7 @@ export default class Dialogue extends LitElement {
         text-align: justify;
       }
       .title {
-        font-size: 2rem;
+        font-size: 4rem;
         position: absolute;
         left: 1rem;
         bottom: 1rem;
