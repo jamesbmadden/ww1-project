@@ -56,7 +56,7 @@ export default class Dialogue extends LitElement {
         z-index: 2;
       }
       .close-button {
-        position: absolute;
+        position: fixed;
         top: 1rem;
         left: 1rem;
         box-sizing: border-box;
@@ -88,7 +88,6 @@ export default class Dialogue extends LitElement {
   }
 
   closeDialogue () {
-    console.log(this.parentElement, this);
     setTimeout(() => {
       this.parentElement.removeChild(this);
     }, 0);
@@ -102,7 +101,7 @@ export default class Dialogue extends LitElement {
         }
       </style>
       <div class="dialogue-box">
-        <a class="close-button" @click=${() => this.closeDialogue}>
+        <a class="close-button" @click=${() => this.closeDialogue()}>
           <img src="./img/close.svg" width="32" />
         </a>
         <header class="header-img">
