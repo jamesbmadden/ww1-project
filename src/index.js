@@ -1,3 +1,4 @@
+import './intro.js';
 import './timeline.js';
 import './dialogue.js';
 
