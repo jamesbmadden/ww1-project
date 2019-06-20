@@ -68,7 +68,8 @@ timeline.items = [
   {
     title: 'Defense of the German Offensives',
     date: new Date(1918, 2, 21),
-    image: './img/spring.jpg'
+    image: './img/spring.jpg',
+    body: 'On 21 March 1918, the German offensive began. Lead by specially trained german ‘storm troopers’, they used heavy gas and artillery to penetrate the allied lines. The attack devastated two British armies and thousands of stunned Allied troops. The attack later hit Belgian, British, French, and American forces at strategic points from the English Channel to the Marne River, east of Paris. The Canadians were not directly affected, but many divisions of troops were pulled away temporarily to plug holes in the Allied line. The 2nd Division fought with British units for several months. The Canadian Motor Machine Gun Brigade, commanded by Brigadier-General Raymond Brutinel, fought along the British front offering important fire support from its armoured cars. The Canadian Cavalry Brigade also fought to slow the German advance. In one fierce action, Lieutenant Gordon Flowerdew was awarded the Victoria Cross. The German offensives of 1918 failed to defeat the Allied armies in the West. Germany’s own loss of 800,000 killed, or wounded from March to July exhausted its manpower reserves. It caused suffering casualties to its elite ‘storm troopers’ and assault divisions. The Canadian Corps escaped from the Germans’ offensive, but Sir Douglas Haig would lead a strategic counterattack. This offensive, launched in August against German forces badly weakened by the spring fighting, would be called the Hundred Days campaign.'
   },
   {
     title: 'More Independent Canada',
