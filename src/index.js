@@ -22,11 +22,11 @@ timeline.items = [
     image: './img/ypres.jpg',
     body: 'On 22 April, two Canadian brigades were in the front lines, with a third in reserve. At 5 p.m., the Germans released gas against the French 45th Division to the Canadians’ left. An enormous green-yellow gas cloud, several kilometres long, drifted towards the French lines. When it rolled over their positions, French troops suffering from their eyes and throats burning from the chlorine. Most of the gas missed the Canadians, but the French retreat had exposed the Canadian’s left flank, and potentially threatened the Allied position. General Alderson’s units shifted positions to cover the gap, but the German gas attack had torn a huge hole, several kilometres wide, in the Allied line. From 22 April to 25 April, the Canadians fought to defend this exposed position. Outnumbered, outgunned, and outflanked, on the 24th they faced a second, this time direct, chlorine gas attack. The Canadians counterattacked to stall the German advance, and then slowly gave ground, buying precious time for British troops to be rushed forward.'
   },
-  {
+  /*{
     title: 'Battle of Festubert',
     date: new Date(1915, 4, 15),
     image: './img/festubert.jpg'
-  },
+  },*/
   {
     title: 'Battle St. Eloi Craters',
     date: new Date(1916, 2, 27),
