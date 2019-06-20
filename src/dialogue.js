@@ -80,7 +80,6 @@ export default class Dialogue extends LitElement {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Spectral', serif;
         transition: background 0.2s;
       }
       .close-button:hover {
