@@ -56,6 +56,7 @@ export default class Intro extends LitElement {
         min-width: 8rem;
         border: white solid 2px;
         color: white;
+        font-family: 'Spectral', serif;
         transition: background 0.4s, color 0.4s;
       }
       button:hover {
