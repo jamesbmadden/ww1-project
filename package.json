@@ -1,0 +1,29 @@
+{
+  "name": "ww1-project",
+  "version": "1.0.0",
+  "description": "Project for ww1",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "console.log('no tests enabled')",
+    "build": "webpack",
+    "travis": "npm run build && rm .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesbmadden/ww1-project.git"
+  },
+  "author": "James Madden",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.0"
+  }
+}
