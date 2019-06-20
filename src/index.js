@@ -30,7 +30,9 @@ timeline.items = [
   {
     title: 'Battle St. Eloi Craters',
     date: new Date(1916, 2, 27),
-    image: './img/eloi.jpg'
+    image: './img/eloi.jpg',
+    body_image: './img/eloi2.jpg',
+    body: 'The battle of St. Eloi Craters was fought from March 27th to April 16th in 1916. The battle involved the Canadian Second Division, and was the first battle many young Canadian soldiers fought. The purpose of the battle was for the British and Canadians to take back Belgian land, and weaken German defences. At the time of the battle, mine warfare was crucial for victories. British forces had planted many bombs in trenches and tunnels in the fields near the Belgian town of St. Eloi. These bombs created “craters”, which were used to gain land and advance towards the enemy. Later, the “craters” became filled with water and made seeking cover in their shelter extremely difficult. On April 4th, 1916, the Canadians relieved the exhausted British soldiers  from their positions and joined the battle. The Canadians found that there was a shortage of supplies, such as helmets, defense positions and machine guns. They were also unclear about their roles and the enemy’s position. On April 6th the Germans lead a large attack on the main road, and were able to recapture all the ground they had lost in the battle. The Canadians continued to fight but were unable to make progress in regaining land. The Germans attacked Canadians with tear gas, machine guns and rifles. The battle of St. Eloi was extremely dangerous, as communication was limited and heavy rainfall made fighting much more difficult. The battle ended on April 16th 1916 with 1370 Canadian casualties, and the Germans having control over the battlefield. '
   },
   {
     title: 'Battle Mount Sorrel',
